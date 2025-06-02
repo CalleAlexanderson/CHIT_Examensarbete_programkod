@@ -1,4 +1,4 @@
-## CHIT
+## CHIT - En chattapplikation byggd med React och ASP.NET core
 
 Det här är kod till den chattapplikation  jag skapat för mitt examensarbete.
 
