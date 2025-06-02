@@ -1,0 +1,159 @@
+.profile-div,
+.add-friend-div,
+.friend-request-div {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #EDFBFF;
+    border-radius: 40px;
+}
+
+.profile-div {
+    width: 260px;
+    min-height: 260px;
+    height: auto;
+}
+
+.friend-request-div{
+    width: 260px;
+    height: 260px;
+}
+
+.profile-div img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.profile-div input[type="text"] {
+    border: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.profile-div input:focus {
+    outline: 3px solid #201E44;
+}
+
+.profile-div p {
+    margin: 40px 0 5px 5px;
+}
+
+.profile-button-div{
+    display: flex;
+    justify-content: space-between;
+    width: 230px;
+}
+
+.name-change-button,
+.image-change-button {
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.image-change-button {
+    margin: 10px auto 0;
+}
+
+.avatar-input::file-selector-button {
+    visibility: hidden;
+}
+
+.avatar-input {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: hsla(0, 0%, 100%, 0);
+}
+
+.add-friend-div {
+    width: 260px;
+    min-height: 110px;
+    height: auto;
+}
+
+.add-friend-div form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-friend-div input {
+    font-size: 36px;
+}
+
+.add-friend-div button {
+    font-size: 16px;
+}
+
+.friend-request-buttons-div {
+    display: flex;
+    justify-content: space-around;
+    width: 220px;
+    margin: 0 auto;
+    border-bottom: 2px solid #EDFBFF;
+}
+
+.friend-request-buttons-div button {
+    border: none;
+    width: 100px;
+    margin: 2px 0 4px;
+    border-radius: 5px;
+    transition: 0.25s background;
+    cursor: pointer;
+}
+
+.friend-request-buttons-div button.current-side {
+    border: none;
+    width: 100px;
+    margin: 2px 0 4px;
+    border-radius: 5px;
+    background-color: #201E44;
+    pointer-events: none;
+}
+
+.friend-request-buttons-div button:not(.current-side):hover {
+    background-color: #201E44;
+}
+
+.friend-request-buttons-div span {
+    width: 2px;
+    height: 35px;
+    background-color: #EDFBFF;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .profile-div {
+        display: grid;
+        grid-template-columns: 100px 300px;
+        width: 360px;
+        min-height: 160px;
+    }
+
+    .profile-div div:nth-child(2) {
+        margin-left: 20px;
+    }
+
+    .profile-div p {
+        margin: 0 0 5px 5px;
+    }
+
+    .avatar-input {
+        top: 20px;
+        left: 70px;
+        transform: translate(-50%, 0);
+    }
+}

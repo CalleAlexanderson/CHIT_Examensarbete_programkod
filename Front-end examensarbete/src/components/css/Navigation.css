@@ -1,0 +1,108 @@
+h1 {
+    text-align: center;
+    font-size: 28px;
+    padding: 10px 0 5px;
+}
+
+.open-chats-arrow{
+    position: fixed;
+    top: 2.5px;
+    left: 5px;
+    transform: rotate(180deg);
+    width: 25px;
+    height: 25px;
+}
+
+.back-chats-arrow{
+    position: fixed;
+    top: 2.5px;
+    left: 180px;
+    width: 25px;
+    height: 25px;
+}
+
+.chats-menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 210px;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: +5;
+}
+
+.chat-switch-menu{
+    width: 180px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.chat-switch{
+    display: flex;
+    flex-direction: row;
+    width: 180px;
+    border-radius: 10px;
+    padding: 1px;
+    border: none;
+}
+
+.chat-switch:first-child{
+    margin-bottom: 10px;
+}
+
+.chat-switch img{
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+}
+
+.chat-switch p{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.chat-switch.active{
+    border: 1px solid #EDFBFF;
+    padding: 0;
+    pointer-events: none;
+}
+
+.chat-switch:not(.active):hover{
+    border: 1px solid #edfbff;
+    padding: 0;
+    cursor: pointer;
+}
+
+.friend-div{
+    display: block;
+    margin: 5px auto 0;
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    text-align: start;
+    font-size: 16px;
+}
+
+.friend-div.active{
+    background-color: #201E44;
+}
+
+.friend-div:not(.active):hover{
+    background-color: #201E44;
+    cursor: pointer;
+}
+
+/* ser till att dens children inte har translate -210px på större skärmar */
+@media (max-width:767px) {
+    .chats-menu-hidden{
+        transform: translateX(-210px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .back-chats-arrow{
+        display: none;
+    }
+  }

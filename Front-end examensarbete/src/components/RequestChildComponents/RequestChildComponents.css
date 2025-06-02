@@ -1,0 +1,93 @@
+.request-div {
+    position: relative;
+    display: flex;
+    height: 40px;
+    border-bottom: 1px solid #201E44;
+}
+
+.request-div-avatar {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 15px;
+}
+
+.friend-profile-div{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    min-height: 160px;
+    height: auto;
+    padding: 20px;
+    border: 1px solid #EDFBFF;
+    border-radius: 40px;
+    z-index: +1;
+}
+
+.friend-profile-div img {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.profile-div p {
+    margin: 40px 0 5px 5px;
+}
+
+.close-friend-profile-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.request-div-div{
+    width: 160px;
+    margin: 5px;
+}
+
+.friend-id{
+    font-size: 10px;
+}
+
+.accept-friend-button,
+.reject-friend-button,
+.profile-friend-button {
+    position: absolute;
+    top: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.accept-friend-button img,
+.reject-friend-button img,
+.profile-friend-button img {
+    width: 25px;
+    height: 25px;
+}
+
+.accept-friend-button {
+    right: 30px;
+    background-color: #006400;
+}
+
+.reject-friend-button {
+    right: 0px;
+    background-color: #A60000;
+}
+
+.profile-friend-button{
+    right: 30px;
+    background-color: #510A6B;
+}

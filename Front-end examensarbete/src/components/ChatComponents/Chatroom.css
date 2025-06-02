@@ -1,0 +1,146 @@
+.chat-div {
+    height: calc(100vh - 50px);
+    padding-bottom: 20px;
+    overflow-y: scroll;
+    background-color: #D2E6F0;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+
+
+.message-div {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+    width: 310px;
+    padding: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.message-input {
+    width: 260px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    overflow: visible;
+}
+
+.message-send-button {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    border-radius: 5px;
+    background-color: #EDFBFF;
+}
+
+.message-send-button:disabled {
+    background-color: #201E44;
+}
+
+.message-name-sent {
+    position: absolute;
+    top: -25px;
+    right: 0px;
+}
+
+.message-name-sent p {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    width: max-content;
+}
+
+.message-name-receive {
+    position: absolute;
+    top: -25px;
+    left: 0px;
+}
+
+.message-name-receive p {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: max-content;
+}
+
+.message-time-sent {
+    position: absolute;
+
+    .sent-message {
+        background-color: #006400;
+        margin-left: calc(100vw - 250px);
+    }
+
+    bottom: -20px;
+    right: 15px;
+}
+
+.message-time-receive {
+    position: absolute;
+    bottom: -20px;
+    left: 15px;
+}
+
+.message-avatar {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.sent-message,
+.received-message {
+    position: relative;
+    width: 210px;
+    margin: 60px 20px;
+    padding: 10px;
+    border-radius: 10px;
+    word-break: break-all;
+}
+
+.sent-message {
+    background-color: #006400;
+    margin-left: calc(100% - 250px);
+}
+
+.sent-message::after {
+    position: absolute;
+    content: "◀";
+    transform: rotate(-130deg);
+    right: -7px;
+    bottom: -16px;
+    font-size: 24px;
+    color: #006400;
+}
+
+.received-message {
+    background-color: #510A6B;
+}
+
+.received-message::after {
+    position: absolute;
+    content: "◀";
+    left: -5px;
+    bottom: -15px;
+    transform: rotate(195deg);
+    font-size: 24px;
+    color: #510A6B;
+}
+
+@media only screen and (min-width: 768px) {
+    .chat-div {
+        height: calc(100vh - 20px);
+        margin: 0 210px;
+    }
+
+    .message-div {
+        width: calc(90% - 380px);
+    }
+
+    .message-input {
+        width: calc(100% - 50px);
+    }
+}

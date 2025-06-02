@@ -1,0 +1,72 @@
+.login-background-div {
+    height: 100vh;
+}
+
+.logo {
+    display: block;
+    width: 180px;
+    height: 45px;
+    margin: 0 auto 30px;
+}
+
+.login-div{
+    width: 260px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+.login-div div{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+.login-div label{
+    margin-left: 10px;
+}
+
+.login-div input{
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #EDFBFF;
+}
+
+.input-error {
+    margin: 2px 0 0 10px;
+}
+
+.login-button{
+    display: block;
+    width: 90px;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    margin: 30px auto 0;
+    background-color: #EDFBFF;
+    color: #03031C;
+}
+
+.switch-login{
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.login-link{
+    border: none;
+    cursor: pointer;
+}
+
+.login-link:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .logo {
+        padding-top: 30px;
+    }
+}
